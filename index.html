@@ -37,6 +37,11 @@
         font-size: 0.9rem;
         text-align: center;
       }
+      .underline {
+      text-decoration: underline;
+      text-decoration-color: orangered; /* custom color */
+      text-underline-position: under;
+    }
     </style>
   </head>
   <body>
@@ -116,7 +121,9 @@
       </nav>
     </header>
     <div class="container mt-5">
-      <h1 class="mb-5 fs-4">Popular Now</h1>
+      <div>
+      <h1 class="mb-5 fs-4">Popular <span class="underline">now</span>
+      </div>
       <div
         class="card d-inline-block ms-4 py-5 px-2"
         style="background-color: #f9d9aa; border-radius: 3rem"
@@ -329,7 +336,7 @@
     </div>
 
     <div class="container mt-5">
-      <h1 class="mb-5 fs-4">How to use delivery system</h1>
+      <h1 class="mb-5 fs-4">How to use delivery <span class="underline">service</span>
 
       <div class="row">
         <div class="col-md-4 col-sm-6 mb-4">
