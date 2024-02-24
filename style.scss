@@ -1,0 +1,131 @@
+$myColor: sandybrown;
+$baseSize: 4px;
+$secondColor: burlywood;
+
+@mixin flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  height: 230vh;
+}
+.container-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 80px;
+  height: 80vh;
+  .content-left {
+    width: 450px;
+    .title {
+      font-size: 48px;
+      span {
+        color: $myColor;
+      }
+      p {
+        width: 400px;
+      }
+    }
+
+    .order-button {
+      @include flex-box();
+      font-size: 18px;
+      gap: 8px;
+      padding: ($baseSize * 3) ($baseSize * 6);
+      border-radius: ($baseSize * 10);
+
+      span {
+        flex-flow: 1;
+      }
+
+      .icon {
+        background-color: $myColor;
+        padding: $baseSize;
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+        @include flex-box();
+      }
+    }
+  }
+  .content-right {
+    .hero-img-container {
+      background-color: $secondColor;
+      border-radius: 100%;
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+    }
+
+    .glassy-card {
+      width: max-content;
+      background-color: #fff;
+      border-radius: ($baseSize * 10);
+      padding: $baseSize;
+
+      position: absolute;
+      top: ($baseSize * 5);
+      left: 0;
+
+      .glassy-border {
+        background-color: #000;
+        padding: ($baseSize * 6);
+        border-radius: ($baseSize * 10);
+      }
+    }
+  }
+}
+
+.about-us {
+  background-image: url("./assets/Images/bg-aboutus.png");
+  background-color: $secondColor;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 50vh;
+  @include flex-box();
+  color: white;
+  font-size: smaller;
+
+  .about-us-content-left {
+    padding: 10rem;
+    .card {
+      width: 20rem;
+      top: -5rem;
+    }
+  }
+
+  .about-us-content-right {
+    color: #000;
+    max-width: 800px;
+
+    h1,
+    h3 {
+      width: 30vw;
+    }
+    p {
+      width: 25vw;
+    }
+
+    .order-button {
+      @include flex-box();
+      font-size: 12px;
+      gap: 8px;
+      padding: 16px ($baseSize * 2);
+      border-radius: ($baseSize * 10);
+      background-color: chocolate;
+
+      span {
+        flex-flow: 1;
+        color: $myColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+main {
+  height: 230vh;
+}
+
+.container-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 80px;
+  height: 80vh;
+}
+.container-content .content-left {
+  width: 450px;
+}
+.container-content .content-left .title {
+  font-size: 48px;
+}
+.container-content .content-left .title span {
+  color: sandybrown;
+}
+.container-content .content-left .title p {
+  width: 400px;
+}
+.container-content .content-left .order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 40px;
+}
+.container-content .content-left .order-button span {
+  flex-flow: 1;
+}
+.container-content .content-left .order-button .icon {
+  background-color: sandybrown;
+  padding: 4px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-content .content-right .hero-img-container {
+  background-color: burlywood;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-content .content-right img {
+  width: 300px;
+  height: auto;
+}
+.container-content .content-right .glassy-card {
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 4px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.container-content .content-right .glassy-card .glassy-border {
+  background-color: #000;
+  padding: 24px;
+  border-radius: 40px;
+}
+
+.about-us {
+  background-image: url("./assets/Images/bg-aboutus.png");
+  background-color: burlywood;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: smaller;
+}
+.about-us .about-us-content-left {
+  padding: 10rem;
+}
+.about-us .about-us-content-left .card {
+  width: 20rem;
+  top: -5rem;
+}
+.about-us .about-us-content-right {
+  color: #000;
+  max-width: 800px;
+}
+.about-us .about-us-content-right h1,
+.about-us .about-us-content-right h3 {
+  width: 30vw;
+}
+.about-us .about-us-content-right p {
+  width: 25vw;
+}
+.about-us .about-us-content-right .order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  gap: 8px;
+  padding: 16px 8px;
+  border-radius: 40px;
+  background-color: chocolate;
+}
+.about-us .about-us-content-right .order-button span {
+  flex-flow: 1;
+  color: sandybrown;
+}/*# sourceMappingURL=style.css.map */
